@@ -1,0 +1,19 @@
+**Introduction à l'intégrité des données**
+
+L'intégrité des données est un concept essentiel en informatique qui garantit que les données n'ont pas été altérées, corrompues ou modifiées de manière non autorisée. L'intégrité des données est cruciale dans de nombreux domaines, tels que la sécurité des informations, la vérification des fichiers et la protection contre les attaques.
+
+Le protocole de hachage sécurisé SHA-2 (Secure Hash Algorithm 2) est un algorithme de hachage largement utilisé pour garantir l'intégrité des données. SHA-2 est une famille d'algorithmes de hachage cryptographique qui comprend des variantes telles que SHA-224, SHA-256, SHA-384 et SHA-512. Ces variantes diffèrent par la taille de leur sortie (digest) et le nombre d'itérations de l'algorithme.
+
+**Fonctionnement de SHA-2**
+
+L'algorithme SHA-2 prend en entrée un message de taille variable et génère une empreinte (digest) de taille fixe. Voici les étapes de base de fonctionnement de SHA-2 :
+
+1. **Préparation du message** : Le message d'entrée est préparé en ajoutant un padding (remplissage) pour le rendre compatible avec la taille de bloc de l'algorithme SHA-2. Le padding comprend généralement des bits 0 et des informations sur la longueur du message.
+
+2. **Division en blocs** : Le message préparé est divisé en blocs de taille fixe qui sont ensuite traités par l'algorithme.
+
+3. **Initialisation des valeurs de hachage** : L'algorithme initialise des valeurs de hachage initiales pour chaque variante de SHA-2. Ces valeurs sont spécifiques à chaque variante et sont utilisées pour calculer les empreintes.
+
+4. **Itérations de compression** : Chaque bloc du message est traité par une série d'itérations de compression où les valeurs de hachage sont mises à jour. L'algorithme SHA-2 utilise des opérations mathématiques complexes, telles que des opérations logiques, des rotations de bits et des fonctions non linéaires, pour effectuer ces calculs.
+
+5. **Génération de l'empreinte** : Une fois que tous les blocs du message ont été traités, l'algorithme génère une empreinte finale (digest) qui représente le résultat du hachage. La taille de l'empreinte dépend de la variante de SHA-2 utilisée.
